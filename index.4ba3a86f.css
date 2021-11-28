@@ -1,0 +1,122 @@
+@font-face {
+  font-family: "Noto Sans";
+  src: url(NotoSans-Regular.acda5781.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Noto Sans";
+  src: url(NotoSans-Regular.acda5781.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(Poppins-Bold.94721583.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+html {
+  font-family: Noto Sans, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 23px;
+  color: white;
+}
+body {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+.nav__link {
+  color: #f8f8f8;
+  margin: auto;
+  margin-right: 40px;
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  transition: all 0.3s;
+}
+.nav__link:last-child {
+  margin-right: 0;
+}
+.nav__link--icon {
+  margin-right: 24px;
+  transition: all 0.3s;
+}
+.nav__link--icon:hover {
+  transform: scale(1.2);
+}
+.nav__link--icon:active {
+  opacity: 0.7;
+}
+.nav__link--icon:last-child {
+  margin-right: 0;
+}
+.nav__link:hover {
+  color: #f8f8f8;
+  transform: scale(1.2);
+}
+.nav__link:active {
+  opacity: 0.7;
+}
+.first-screen {
+  background-image: url(main-photo.2a3307c6.png);
+  background-size: cover;
+}
+.first-screen__content {
+  margin: auto;
+}
+.content {
+  color: #f8f8f8;
+}
+.content__title {
+  margin-bottom: 32px;
+  padding: 0;
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 68px;
+}
+.content__text {
+  margin-bottom: 72px;
+  padding: 0;
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+}
+.content__text:first-child {
+  margin-right: 20px;
+}
+.button-light {
+  color: #f8f8f8;
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+  padding: 16px;
+  border: 2px solid #f8f8f8;
+  border-radius: 15px;
+  background-color: transparent;
+  transition: all 0.3s;
+}
+.button-light:hover {
+  color: #000;
+  background-color: #f8f8f8;
+}
+.button-light:active {
+  color: #f8f8f8;
+  background-color: transparent;
+}
+.button-light:disabled {
+  opacity: 0.4;
+}
+/*# sourceMappingURL=index.4ba3a86f.css.map */
