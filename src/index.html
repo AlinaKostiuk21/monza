@@ -12,8 +12,8 @@
     <title>Monza Motorsports</title>
 </head>
 <body>
-<header>
-    <div class="container-fluid first-screen vh-100 d-flex justify-content-center align-items-center">
+<header class="header">
+    <div class="container-fluid vh-100 d-flex justify-content-center align-items-center">
         <div class="cover-container d-flex w-100 h-100 p-4 mx-auto flex-column">
             <div class="mb-auto">
                 <div class="container">
@@ -45,7 +45,7 @@
                     </nav>
                 </div>
             </div>
-            <div class="container first-screen__content">
+            <div class="container header__content">
                 <div class="row content">
                     <h1 class="col-md-7 content__title">The right way to get a car</h1>
                     <div class="row content__text">
@@ -604,29 +604,39 @@
         </div>
     </section>
 </main>
-<footer>
-    <div class="container-fluid">
-        <div class="container">
+<footer class="footer">
+    <div class="container-fluid align-items-center">
+        <div class="container d-flex justify-content-between">
             <a href="#home" class="float-md-start mb-0">
                 <img
-                        class="w-100"
-                        src="./images/logo.svg"
-                        alt="logo"
+                    class="w-100"
+                    src="./images/logo.svg"
+                    alt="logo"
                 >
             </a>
-            <nav class="nav nav-masthead justify-content-center float-md-end">
-                <a class= href="#">Inventory</a>
-                <a class="" href="#">Financing </a>
-                <a class="" href="#">Contacts</a>
+            <nav class="nav nav-masthead">
                 <div>
-                    <a class= href="">
-                        <img src="./images/facebook.svg" alt="facebook">
-                    </a>
-                    <a class="" href="">
-                        <img src="./images/instagram.svg" alt="instagram">
-                    </a>
+                    <a class="nav__link" href="#Inventory">Inventory</a>
+                    <a class="nav__link" href="#Financing">Financing</a>
+                    <a class="nav__link" href="#Contacts">Contacts</a>
                 </div>
             </nav>
+            <div>
+                <a class="nav__link--icon"
+                   href="https://www.facebook.com/MonzaMotorsports/"
+                   target="_blank"
+                   rel="noopener"
+                >
+                    <img src="images/facebook.svg" alt="facebook">
+                </a>
+                <a class="nav__link--icon"
+                   href="https://www.instagram.com/monza_motorsports/"
+                   target="_blank"
+                   rel="noopener"
+                >
+                    <img src="./images/instagram.svg" alt="instagram">
+                </a>
+            </div>
         </div>
     </div>
 </footer>
