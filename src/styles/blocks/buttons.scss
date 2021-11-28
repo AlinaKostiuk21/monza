@@ -1,6 +1,6 @@
 .button-light {
   color: $Color-primary-200;
-  font-family: Noto Sans;
+  font-family: Noto Sans, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -24,5 +24,32 @@
 
   &:disabled {
     opacity: 0.4;
+  }
+}
+
+.button-orange {
+  color: $Color-primary-200;
+  font-family: Noto Sans, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+
+  border: 2px solid transparent;
+  border-radius: 15px;
+  background-color: $Color-primary-300;
+
+  transition: all $transition-duration;
+
+  &:hover {
+    color: $Color-primary-300;
+    background-color: transparent;
+    border-color: $Color-primary-300;
+  }
+
+  &:active {
+    color: $Color-primary-200;
+    background-color: $Color-primary-300;
+    border-color: transparent;
   }
 }

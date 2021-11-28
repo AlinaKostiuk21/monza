@@ -61,62 +61,60 @@
         </div>
     </div>
 </header>
-<main>
-    <section>
-        <h2>Current offers</h2>
-        <div class="container">
-            <div class="row">
-                <select class="col form-select" aria-label="Default select example">
+<main class="main-content">
+    <div class="container">
+        <section class="main-content__offers current-offers">
+            <h2 class="current-offers__title text-center">Current offers</h2>
+            <div class="row gap-3 current-offers__filters filters">
+                <select class="col form-select filters__filter">
                     <option selected>Year</option>
                     <option value="2000">2000</option>
                     <option value="2001">2001</option>
                     <option value="2002">2002</option>
                 </select>
-                <select class="col form-select" aria-label="Default select example">
+                <select class="col form-select filters__filter">
                     <option selected>Make</option>
                     <option value="Honda">Honda</option>
                     <option value="Kia">Kia</option>
                     <option value="Toyota">Toyota</option>
                     <option value="Volkswagen">Volkswagen</option>
                 </select>
-                <select class="col form-select" aria-label="Default select example">
+                <select class="col form-select filters__filter">
                     <option selected>Model</option>
                     <option value="Honda">Honda</option>
                     <option value="Kia">Kia</option>
                     <option value="Toyota">Toyota</option>
                     <option value="Volkswagen">Volkswagen</option>
                 </select>
-                <select class="col form-select" aria-label="Default select example">
+                <select class="col form-select filters__filter">
                     <option selected>Trim</option>
                     <option value="Honda">Honda</option>
                     <option value="Kia">Kia</option>
                     <option value="Toyota">Toyota</option>
                     <option value="Volkswagen">Volkswagen</option>
                 </select>
-                <select class="col form-select" aria-label="Default select example">
+                <select class="col form-select filters__filter">
                     <option selected>Mileage</option>
                     <option value="Honda">Honda</option>
                     <option value="Kia">Kia</option>
                     <option value="Toyota">Toyota</option>
                     <option value="Volkswagen">Volkswagen</option>
                 </select>
-                <button class="col">
+                <button class="col-md-3 button-orange">
                     40 cars
                 </button>
             </div>
-        </div>
-        <div class="container">
-            <div class="row justify-content-between">
-                <div class="col">
+            <div class="row justify-content-between current-offers__sort-filters">
+                <div class="col filters__checkbox">
                     <label for="check">
                         <input type="checkbox" name="" id="check">
                         Instantly available vehicles
                     </label>
                 </div>
-                <div class="col">
-                    <span>Sort by</span>
+                <div class="col text-end filters__sort">
+                    <span class="filters__sort-title">Sort by</spanfilters__sort>
                     <but>a</but>
-                    <select name="" id="sort">
+                    <select class="filters__sort-selector" id="sort">
                         <option selected>Publication date (ascending)</option>
                         <option value="Price (ascending)">Price (ascending)</option>
                         <option value="Price (descending)">Price (descending)</option>
@@ -127,210 +125,210 @@
                     </select>
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
-                <div class="card">
-                    <div width="100%" height="225">
-                        <img src="./images/car1.png" alt="Photo car">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+                    <div class="card">
+                        <div width="100%" height="225">
+                            <img src="./images/car1.png" alt="Photo car">
+                        </div>
+                        <div class="card-body">
+                            <span>2019</span>
+                            <h4>Volkswagen Tiguan</h4>
+                            <p>19,855 km | Automatic | Diesel</p>
+                            <p>$34,888</p>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <span>2019</span>
-                        <h4>Volkswagen Tiguan</h4>
-                        <p>19,855 km | Automatic | Diesel</p>
-                        <p>$34,888</p>
+                    <div class="card">
+                        <div width="100%" height="225">
+                            <img src="./images/car1.png" alt="Photo car">
+                        </div>
+                        <div class="card-body">
+                            <span>2019</span>
+                            <h4>Volkswagen Tiguan</h4>
+                            <p>19,855 km | Automatic | Diesel</p>
+                            <p>$34,888</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div width="100%" height="225">
-                        <img src="./images/car1.png" alt="Photo car">
+                    <div class="card">
+                        <div width="100%" height="225">
+                            <img src="./images/car1.png" alt="Photo car">
+                        </div>
+                        <div class="card-body">
+                            <span>2019</span>
+                            <h4>Volkswagen Tiguan</h4>
+                            <p>19,855 km | Automatic | Diesel</p>
+                            <p>$34,888</p>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <span>2019</span>
-                        <h4>Volkswagen Tiguan</h4>
-                        <p>19,855 km | Automatic | Diesel</p>
-                        <p>$34,888</p>
+                    <div class="card">
+                        <div width="100%" height="225">
+                            <img src="./images/car1.png" alt="Photo car">
+                        </div>
+                        <div class="card-body">
+                            <span>2019</span>
+                            <h4>Volkswagen Tiguan</h4>
+                            <p>19,855 km | Automatic | Diesel</p>
+                            <p>$34,888</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div width="100%" height="225">
-                        <img src="./images/car1.png" alt="Photo car">
+                    <div class="card">
+                        <div width="100%" height="225">
+                            <img src="./images/car1.png" alt="Photo car">
+                        </div>
+                        <div class="card-body">
+                            <span>2019</span>
+                            <h4>Volkswagen Tiguan</h4>
+                            <p>19,855 km | Automatic | Diesel</p>
+                            <p>$34,888</p>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <span>2019</span>
-                        <h4>Volkswagen Tiguan</h4>
-                        <p>19,855 km | Automatic | Diesel</p>
-                        <p>$34,888</p>
+                    <div class="card">
+                        <div width="100%" height="225">
+                            <img src="./images/car1.png" alt="Photo car">
+                        </div>
+                        <div class="card-body">
+                            <span>2019</span>
+                            <h4>Volkswagen Tiguan</h4>
+                            <p>19,855 km | Automatic | Diesel</p>
+                            <p>$34,888</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div width="100%" height="225">
-                        <img src="./images/car1.png" alt="Photo car">
+                    <div class="card">
+                        <div width="100%" height="225">
+                            <img src="./images/car1.png" alt="Photo car">
+                        </div>
+                        <div class="card-body">
+                            <span>2019</span>
+                            <h4>Volkswagen Tiguan</h4>
+                            <p>19,855 km | Automatic | Diesel</p>
+                            <p>$34,888</p>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <span>2019</span>
-                        <h4>Volkswagen Tiguan</h4>
-                        <p>19,855 km | Automatic | Diesel</p>
-                        <p>$34,888</p>
+                    <div class="card">
+                        <div width="100%" height="225">
+                            <img src="./images/car1.png" alt="Photo car">
+                        </div>
+                        <div class="card-body">
+                            <span>2019</span>
+                            <h4>Volkswagen Tiguan</h4>
+                            <p>19,855 km | Automatic | Diesel</p>
+                            <p>$34,888</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div width="100%" height="225">
-                        <img src="./images/car1.png" alt="Photo car">
+                    <div class="card">
+                        <div width="100%" height="225">
+                            <img src="./images/car1.png" alt="Photo car">
+                        </div>
+                        <div class="card-body">
+                            <span>2019</span>
+                            <h4>Volkswagen Tiguan</h4>
+                            <p>19,855 km | Automatic | Diesel</p>
+                            <p>$34,888</p>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <span>2019</span>
-                        <h4>Volkswagen Tiguan</h4>
-                        <p>19,855 km | Automatic | Diesel</p>
-                        <p>$34,888</p>
+                    <div class="card">
+                        <div width="100%" height="225">
+                            <img src="./images/car1.png" alt="Photo car">
+                        </div>
+                        <div class="card-body">
+                            <span>2019</span>
+                            <h4>Volkswagen Tiguan</h4>
+                            <p>19,855 km | Automatic | Diesel</p>
+                            <p>$34,888</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div width="100%" height="225">
-                        <img src="./images/car1.png" alt="Photo car">
+                    <div class="card">
+                        <div width="100%" height="225">
+                            <img src="./images/car1.png" alt="Photo car">
+                        </div>
+                        <div class="card-body">
+                            <span>2019</span>
+                            <h4>Volkswagen Tiguan</h4>
+                            <p>19,855 km | Automatic | Diesel</p>
+                            <p>$34,888</p>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <span>2019</span>
-                        <h4>Volkswagen Tiguan</h4>
-                        <p>19,855 km | Automatic | Diesel</p>
-                        <p>$34,888</p>
+                    <div class="card">
+                        <div width="100%" height="225">
+                            <img src="./images/car1.png" alt="Photo car">
+                        </div>
+                        <div class="card-body">
+                            <span>2019</span>
+                            <h4>Volkswagen Tiguan</h4>
+                            <p>19,855 km | Automatic | Diesel</p>
+                            <p>$34,888</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div width="100%" height="225">
-                        <img src="./images/car1.png" alt="Photo car">
+                    <div class="card">
+                        <div width="100%" height="225">
+                            <img src="./images/car1.png" alt="Photo car">
+                        </div>
+                        <div class="card-body">
+                            <span>2019</span>
+                            <h4>Volkswagen Tiguan</h4>
+                            <p>19,855 km | Automatic | Diesel</p>
+                            <p>$34,888</p>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <span>2019</span>
-                        <h4>Volkswagen Tiguan</h4>
-                        <p>19,855 km | Automatic | Diesel</p>
-                        <p>$34,888</p>
+                    <div class="card">
+                        <div width="100%" height="225">
+                            <img src="./images/car1.png" alt="Photo car">
+                        </div>
+                        <div class="card-body">
+                            <span>2019</span>
+                            <h4>Volkswagen Tiguan</h4>
+                            <p>19,855 km | Automatic | Diesel</p>
+                            <p>$34,888</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div width="100%" height="225">
-                        <img src="./images/car1.png" alt="Photo car">
+                    <div class="card">
+                        <div width="100%" height="225">
+                            <img src="./images/car1.png" alt="Photo car">
+                        </div>
+                        <div class="card-body">
+                            <span>2019</span>
+                            <h4>Volkswagen Tiguan</h4>
+                            <p>19,855 km | Automatic | Diesel</p>
+                            <p>$34,888</p>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <span>2019</span>
-                        <h4>Volkswagen Tiguan</h4>
-                        <p>19,855 km | Automatic | Diesel</p>
-                        <p>$34,888</p>
+                    <div class="card">
+                        <div width="100%" height="225">
+                            <img src="./images/car1.png" alt="Photo car">
+                        </div>
+                        <div class="card-body">
+                            <span>2019</span>
+                            <h4>Volkswagen Tiguan</h4>
+                            <p>19,855 km | Automatic | Diesel</p>
+                            <p>$34,888</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div width="100%" height="225">
-                        <img src="./images/car1.png" alt="Photo car">
+                    <div class="card">
+                        <div width="100%" height="225">
+                            <img src="./images/car1.png" alt="Photo car">
+                        </div>
+                        <div class="card-body">
+                            <span>2019</span>
+                            <h4>Volkswagen Tiguan</h4>
+                            <p>19,855 km | Automatic | Diesel</p>
+                            <p>$34,888</p>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <span>2019</span>
-                        <h4>Volkswagen Tiguan</h4>
-                        <p>19,855 km | Automatic | Diesel</p>
-                        <p>$34,888</p>
+                    <div class="card">
+                        <div width="100%" height="225">
+                            <img src="./images/car1.png" alt="Photo car">
+                        </div>
+                        <div class="card-body">
+                            <span>2019</span>
+                            <h4>Volkswagen Tiguan</h4>
+                            <p>19,855 km | Automatic | Diesel</p>
+                            <p>$34,888</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div width="100%" height="225">
-                        <img src="./images/car1.png" alt="Photo car">
-                    </div>
-                    <div class="card-body">
-                        <span>2019</span>
-                        <h4>Volkswagen Tiguan</h4>
-                        <p>19,855 km | Automatic | Diesel</p>
-                        <p>$34,888</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div width="100%" height="225">
-                        <img src="./images/car1.png" alt="Photo car">
-                    </div>
-                    <div class="card-body">
-                        <span>2019</span>
-                        <h4>Volkswagen Tiguan</h4>
-                        <p>19,855 km | Automatic | Diesel</p>
-                        <p>$34,888</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div width="100%" height="225">
-                        <img src="./images/car1.png" alt="Photo car">
-                    </div>
-                    <div class="card-body">
-                        <span>2019</span>
-                        <h4>Volkswagen Tiguan</h4>
-                        <p>19,855 km | Automatic | Diesel</p>
-                        <p>$34,888</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div width="100%" height="225">
-                        <img src="./images/car1.png" alt="Photo car">
-                    </div>
-                    <div class="card-body">
-                        <span>2019</span>
-                        <h4>Volkswagen Tiguan</h4>
-                        <p>19,855 km | Automatic | Diesel</p>
-                        <p>$34,888</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div width="100%" height="225">
-                        <img src="./images/car1.png" alt="Photo car">
-                    </div>
-                    <div class="card-body">
-                        <span>2019</span>
-                        <h4>Volkswagen Tiguan</h4>
-                        <p>19,855 km | Automatic | Diesel</p>
-                        <p>$34,888</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div width="100%" height="225">
-                        <img src="./images/car1.png" alt="Photo car">
-                    </div>
-                    <div class="card-body">
-                        <span>2019</span>
-                        <h4>Volkswagen Tiguan</h4>
-                        <p>19,855 km | Automatic | Diesel</p>
-                        <p>$34,888</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div width="100%" height="225">
-                        <img src="./images/car1.png" alt="Photo car">
-                    </div>
-                    <div class="card-body">
-                        <span>2019</span>
-                        <h4>Volkswagen Tiguan</h4>
-                        <p>19,855 km | Automatic | Diesel</p>
-                        <p>$34,888</p>
-                    </div>
-                </div>
-                <div class="card">
-                <div width="100%" height="225">
-                    <img src="./images/car1.png" alt="Photo car">
-                </div>
-                <div class="card-body">
-                    <span>2019</span>
-                    <h4>Volkswagen Tiguan</h4>
-                    <p>19,855 km | Automatic | Diesel</p>
-                    <p>$34,888</p>
                 </div>
             </div>
-                <div class="card">
-                    <div width="100%" height="225">
-                        <img src="./images/car1.png" alt="Photo car">
-                    </div>
-                    <div class="card-body">
-                        <span>2019</span>
-                        <h4>Volkswagen Tiguan</h4>
-                        <p>19,855 km | Automatic | Diesel</p>
-                        <p>$34,888</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
     <section>
         <div class="container-fluid">
             <div class="container">

@@ -1,0 +1,43 @@
+.filters {
+  &__filter {
+    font-family: Noto Sans, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    color: $Color-primary-100;
+
+    padding: 12px;
+    border: 1px solid $Color-secondary-300;
+    border-radius: 15px;
+  }
+
+  &__checkbox {
+    font-family: Noto Sans, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color:$Color-secondary-200;
+    padding: 0;
+  }
+
+  &__sort {
+    font-family: Noto Sans, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+
+    padding: 0;
+
+    &-title {
+      color: $Color-primary-100;
+    }
+
+    &-selector {
+      color: $Color-secondary-200;
+      border: none;
+    }
+  }
+}
