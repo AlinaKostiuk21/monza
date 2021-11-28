@@ -70,11 +70,11 @@ a {
 .nav__link:active {
   opacity: 0.7;
 }
-.first-screen {
+.header {
   background-image: url(main-photo.2a3307c6.png);
   background-size: cover;
 }
-.first-screen__content {
+.header__content {
   margin: auto;
 }
 .content {
@@ -150,6 +150,9 @@ a {
 .main-content__offers {
   padding: 100px 0px 120px;
 }
+.main-content__form-subscription {
+  padding: 120px 0;
+}
 .current-offers__title {
   font-family: Poppins, sans-serif;
   font-style: normal;
@@ -207,6 +210,7 @@ a {
 .card {
   border: none;
   box-shadow: 0px 0px 18px rgba(68, 68, 68, 0.09);
+  transition: all 0.3s;
 }
 .card__title {
   font-family: Noto Sans;
@@ -240,5 +244,36 @@ a {
   font-size: 20px;
   line-height: 27px;
   color: #000;
+}
+.card:hover {
+  border: 1px solid #BDBDBD;
+  border-top: none;
+}
+.form-subscription {
+  background-color: #000;
+}
+.form-subscription__content {
+  padding: 40px 0;
+}
+.form-subscription__title {
+  font-family: Noto Sans, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 34px;
+  color: #f8f8f8;
+}
+.form-subscription__about {
+  font-family: Noto Sans, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  color: #f8f8f8;
+}
+.footer {
+  background-color: #000;
+  margin: 0;
+  padding: 36px 0;
 }
 /*# sourceMappingURL=index.4ba3a86f.css.map */
