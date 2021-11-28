@@ -1,0 +1,25 @@
+.form-subscription {
+  background-color: $Color-primary-100;
+
+  &__content {
+    padding: 40px 0;
+  }
+
+  &__title {
+    font-family: Noto Sans, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 34px;
+    color: $Color-primary-200;
+  }
+
+  &__about {
+    font-family: Noto Sans, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    color: $Color-primary-200;
+  }
+}
