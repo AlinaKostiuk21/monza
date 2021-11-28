@@ -6,14 +6,20 @@
 }
 @font-face {
   font-family: "Noto Sans";
-  src: url(NotoSans-Regular.acda5781.ttf) format("truetype");
-  font-weight: normal;
+  src: url(NotoSans-Bold.3df525aa.ttf) format("truetype");
+  font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: "Poppins";
   src: url(Poppins-Bold.94721583.ttf) format("truetype");
   font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(Poppins-Regular.bebfed2f.ttf) format("truetype");
+  font-weight: normal;
   font-style: normal;
 }
 html {
@@ -160,6 +166,9 @@ a {
 .current-offers__sort-filters {
   margin-bottom: 24px;
 }
+.current-offers__catalog {
+  padding: 0;
+}
 .filters__filter {
   font-family: Noto Sans, sans-serif;
   font-style: normal;
@@ -194,5 +203,42 @@ a {
 .filters__sort-selector {
   color: #8D8D8D;
   border: none;
+}
+.card {
+  border: none;
+  box-shadow: 0px 0px 18px rgba(68, 68, 68, 0.09);
+}
+.card__title {
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 23px;
+  color: #000;
+}
+.card__year {
+  margin-right: 8px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 25px;
+  color: #8D8D8D;
+}
+.card__details {
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  color: #8D8D8D;
+}
+.card__price {
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+  color: #000;
 }
 /*# sourceMappingURL=index.4ba3a86f.css.map */
