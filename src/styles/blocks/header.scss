@@ -1,0 +1,82 @@
+.nav {
+  &__link {
+    color: $Color-primary-200;
+    margin: auto;
+    margin-right: 40px;
+
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+
+    transition: all $transition-duration;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &--icon {
+      margin-right: 24px;
+
+      transition: all $transition-duration;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+
+      &:active {
+        opacity: 0.7;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &:hover {
+      color: $Color-primary-200;
+      transform: scale(1.2);
+    }
+
+    &:active {
+      opacity: 0.7;
+    }
+  }
+}
+
+.first-screen {
+  background-image: url(../images/main-photo.png);
+  background-size: cover;
+
+  &__content {
+    margin: auto;
+  }
+}
+
+.content {
+  color: $Color-primary-200;
+
+  &__title {
+    margin-bottom: 32px;
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  &__text {
+    margin-bottom: 72px;
+
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+
+    &:first-child {
+      margin-right: 20px;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.button-light {
+  color: $Color-primary-200;
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+  padding: 16px;
+  border: 2px solid $Color-primary-200;
+  border-radius: 15px;
+  background-color: transparent;
+
+  transition: all $transition-duration;
+
+  &:hover {
+    color: $Color-primary-100;
+    background-color: $Color-primary-200;
+  }
+
+  &:active {
+    color: $Color-primary-200;
+    background-color: transparent;
+  }
+
+  &:disabled {
+    opacity: 0.4;
+  }
+}
