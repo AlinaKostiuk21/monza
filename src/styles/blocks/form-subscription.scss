@@ -22,4 +22,27 @@
     line-height: 20px;
     color: $Color-primary-200;
   }
+
+  &__input {
+    color: $Color-primary-200;
+    border: 1px solid $Color-primary-200;
+    background: transparent;
+    border-radius: 15px;
+    padding: 16px;
+    font-family: Noto Sans, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    width: 100%;
+
+    &-container {
+      width: 60%;
+      margin-right: 20px;
+    }
+
+    &__button-container {
+      width: auto;
+    }
+  }
 }

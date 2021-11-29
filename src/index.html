@@ -55,7 +55,7 @@
                             has been the benchmark for innovation in the automotive industry.
                         </p>
                     </div>
-                    <button class="col-md-3 button-light">Browse cars</button>
+                    <button class="col-md-3 button-border-light">Browse cars</button>
                 </div>
             </div>
         </div>
@@ -462,26 +462,41 @@
     <section class="form-subscription">
         <div class="container-fluid">
             <div class="container form-subscription__content">
-                <div class="row align-items-center m-auto">
+                <div class="row justify-content-between align-items-center m-auto">
                     <div class="col-6">
                         <h3 class="form-subscription__title">Haven't found a suitable vehicle?</h3>
                         <p class="form-subscription__about">Sign up for our newsletter and be the first to know when we publish new vehicle offers.</p>
                     </div>
+
                     <div class="col-6">
-                        <form action="">
-                            <label for="">
-                                <input type="text" placeholder="Enter your email">
-                            </label>
-                            <button>Subscribe now</button>
+                        <form
+                            method="POST"
+                            action="https://httpbin.org/post"
+                            class="input-group"
+                        >
+                            <div class="form-subscription__input-container">
+                                <input
+                                    name="email"
+                                    type="email"
+                                    class="form-subscription__input"
+                                    placeholder="Enter your email"
+                                >
+                            </div>
+                            <div class="form-subscription__button-container">
+                                <button class="button-light">Subscribe now</button>
+                            </div>
                         </form>
                     </div>
+
+
+
                 </div>
             </div>
         </div>
     </section>
     <section>
         <div class="container">
-            <h2>Popular questions</h2>
+            <h2 class="text-center">Popular questions</h2>
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">

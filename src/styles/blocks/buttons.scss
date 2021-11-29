@@ -1,4 +1,4 @@
-.button-light {
+.button-border-light {
   color: $Color-primary-200;
   font-family: Noto Sans, sans-serif;
   font-style: normal;
@@ -51,5 +51,38 @@
     color: $Color-primary-200;
     background-color: $Color-primary-300;
     border-color: transparent;
+  }
+}
+
+.button-light {
+  color: $Color-primary-100;
+  background-color: $Color-primary-200;
+  border-radius: 15px;
+  font-family: Noto Sans, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 16px;
+  border: 2px solid transparent;
+
+  transition: all $transition-duration;
+
+  &:hover {
+    color: $Color-primary-200;
+    background-color: transparent;
+    border-color: $Color-primary-200;
+  }
+
+  &:active {
+    color: $Color-primary-100;
+    background-color: $Color-primary-200;
+  }
+
+  &:disabled {
+    opacity: 0.4;
   }
 }
