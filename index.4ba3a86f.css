@@ -161,6 +161,7 @@ a {
   text-align: center;
   padding: 16px;
   border: 2px solid transparent;
+  width: 100%;
   transition: all 0.3s;
 }
 .button-light:hover {
@@ -177,6 +178,19 @@ a {
 }
 .main-content__offers {
   padding: 100px 0px 120px;
+}
+.main-content__questions {
+  margin: 120px 0 200px;
+}
+.main-content__title {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 75px;
+  text-transform: uppercase;
+  margin-bottom: 80px;
+  color: #AEAEAE;
 }
 .current-offers__title {
   font-family: Poppins, sans-serif;
@@ -310,11 +324,71 @@ a {
   width: 100%;
 }
 .form-subscription__input-container {
-  width: 60%;
+  width: 70%;
   margin-right: 20px;
 }
 .form-subscription__input__button-container {
-  width: auto;
+  padding: 0;
+}
+.question {
+  border-bottom: 1px solid #C4C4C4;
+}
+.question__title {
+  padding-left: 24px;
+  font-family: Noto Sans, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000;
+  width: 100%;
+  text-align: start;
+  padding-bottom: 24px;
+  transition: all 0.3s;
+}
+.question__title:focus {
+  box-shadow: none;
+  border-bottom: transparent;
+}
+.question__text {
+  font-family: Noto Sans, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 150%;
+  color: #000;
+  padding: 0 46px 24px 40px;
+  transition: all 0.3s;
+}
+.question__text-item {
+  margin-bottom: 8px;
+}
+.question__text-item:last-child {
+  margin-bottom: 0;
+}
+.accordion-button::after {
+  background-image: url(plus.cfcafabe.svg);
+  width: 12px;
+  height: 12px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.accordion-button:not(.collapsed) {
+  font-weight: bold;
+  color: #DF4E3C;
+  border-bottom: none;
+  background: transparent;
+  padding-left: 40px;
+  background: none;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url(minus.4d6ba697.svg);
+  width: 12px;
+  height: 12px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .footer {
   background-color: #000;
