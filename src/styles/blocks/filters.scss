@@ -1,4 +1,24 @@
+.dropdown {
+  width: 100%;
+
+  &-toggle:after {
+    width: 100%;
+    display: inline;
+  }
+
+}
+
+.sort-icon {
+  margin: 0 8px 0 16px;
+}
+
 .filters {
+  margin-bottom: 12px;
+
+  &__dropdown {
+    width: 100%;
+  }
+
   &__filter {
     font-family: Noto Sans, sans-serif;
     font-style: normal;
@@ -8,8 +28,22 @@
     color: $Color-primary-100;
 
     padding: 12px;
-    border: 1px solid $Color-secondary-300;
     border-radius: 15px;
+
+    border: 1px solid $Color-secondary-300;
+    box-sizing: border-box;
+    background: none;
+
+    width: 100%;
+    text-align: start;
+
+    &:focus {
+      font-weight: 600;
+      border: 1px solid $Color-primary-300;
+      box-sizing: border-box;
+      border-radius: 15px;
+      box-shadow: none;
+    }
   }
 
   &__checkbox {
@@ -20,6 +54,14 @@
     line-height: 16px;
     color:$Color-secondary-200;
     padding: 0;
+
+    &-label {
+      margin-left: 8px;
+
+      &:checked {
+        color: $Color-primary-300;
+      }
+    }
   }
 
   &__sort {
@@ -28,16 +70,85 @@
     font-weight: normal;
     font-size: 12px;
     line-height: 16px;
-
     padding: 0;
 
     &-title {
       color: $Color-primary-100;
     }
 
+    &-width {
+      width: fit-content;
+    }
+
     &-selector {
       color: $Color-secondary-200;
       border: none;
+      width: fit-content;
+
+      &:focus {
+        background-color: transparent;
+        font-weight: inherit;
+        border: none;
+        box-sizing: border-box;
+        border-radius: 15px;
+        box-shadow: none;
+      }
     }
   }
 }
+
+.form-check {
+  margin-bottom: 0;
+  position: inherit;
+}
+.form-check-input {
+  position: inherit;
+  margin-top: 0;
+  float: none;
+  margin-left: 0;
+  width: 16px;
+  height: 16px;
+  border: 1px solid $Color-secondary-200;
+  box-sizing: border-box;
+  border-radius: 3px;
+
+  &:checked {
+    background: $Color-primary-300;
+    border-color: $Color-primary-300;
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.dropdown-toggle::after {
+  border: none;
+  background: url(../images/dropdown.svg);
+}
+
+.dropdown-menu {
+  width: 100%;
+  border: 1px solid $Color-secondary-400;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 27px rgba(0, 0, 0, 0.04);
+  border-radius: 15px;
+  min-width: 0;
+}
+
+.dropdown-item {
+  font-family: Noto Sans, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 11px;
+  color: $Color-primary-100;
+  padding-bottom: 20px;
+
+  &:hover {
+    color: $Color-primary-300;
+    background-color: transparent;
+  }
+}
+
+
