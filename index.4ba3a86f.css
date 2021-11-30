@@ -40,7 +40,7 @@ a {
   color: #f8f8f8;
   margin: auto;
   margin-right: 40px;
-  font-family: Noto Sans;
+  font-family: Noto Sans, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -83,7 +83,7 @@ a {
 .content__title {
   margin-bottom: 32px;
   padding: 0;
-  font-family: Noto Sans;
+  font-family: Noto Sans, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 50px;
@@ -92,7 +92,7 @@ a {
 .content__text {
   margin-bottom: 72px;
   padding: 0;
-  font-family: Noto Sans;
+  font-family: Noto Sans, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -134,17 +134,17 @@ a {
   line-height: 20px;
   border: 2px solid transparent;
   border-radius: 15px;
-  background-color: #DF4E3C;
+  background-color: #df4e3c;
   transition: all 0.3s;
 }
 .button-orange:hover {
-  color: #DF4E3C;
+  color: #df4e3c;
   background-color: transparent;
-  border-color: #DF4E3C;
+  border-color: #df4e3c;
 }
 .button-orange:active {
   color: #f8f8f8;
-  background-color: #DF4E3C;
+  background-color: #df4e3c;
   border-color: transparent;
 }
 .button-light {
@@ -190,7 +190,7 @@ a {
   line-height: 75px;
   text-transform: uppercase;
   margin-bottom: 80px;
-  color: #AEAEAE;
+  color: #aeaeae;
 }
 .current-offers__title {
   font-family: Poppins, sans-serif;
@@ -200,7 +200,7 @@ a {
   line-height: 75px;
   text-transform: uppercase;
   margin-bottom: 80px;
-  color: #AEAEAE;
+  color: #aeaeae;
 }
 .current-offers__filters {
   margin-bottom: 24px;
@@ -211,6 +211,22 @@ a {
 .current-offers__catalog {
   padding: 0;
 }
+.dropdown {
+  width: 100%;
+}
+.dropdown-toggle:after {
+  width: 100%;
+  display: inline;
+}
+.sort-icon {
+  margin: 0 8px 0 16px;
+}
+.filters {
+  margin-bottom: 12px;
+}
+.filters__dropdown {
+  width: 100%;
+}
 .filters__filter {
   font-family: Noto Sans, sans-serif;
   font-style: normal;
@@ -219,8 +235,19 @@ a {
   line-height: 20px;
   color: #000;
   padding: 12px;
-  border: 1px solid #BDBDBD;
   border-radius: 15px;
+  border: 1px solid #bdbdbd;
+  box-sizing: border-box;
+  background: none;
+  width: 100%;
+  text-align: start;
+}
+.filters__filter:focus {
+  font-weight: 600;
+  border: 1px solid #df4e3c;
+  box-sizing: border-box;
+  border-radius: 15px;
+  box-shadow: none;
 }
 .filters__checkbox {
   font-family: Noto Sans, sans-serif;
@@ -228,8 +255,14 @@ a {
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
-  color: #8D8D8D;
+  color: #8d8d8d;
   padding: 0;
+}
+.filters__checkbox-label {
+  margin-left: 8px;
+}
+.filters__checkbox-label:checked {
+  color: #df4e3c;
 }
 .filters__sort {
   font-family: Noto Sans, sans-serif;
@@ -242,17 +275,76 @@ a {
 .filters__sort-title {
   color: #000;
 }
+.filters__sort-width {
+  width: fit-content;
+}
 .filters__sort-selector {
-  color: #8D8D8D;
+  color: #8d8d8d;
   border: none;
+  width: fit-content;
+}
+.filters__sort-selector:focus {
+  background-color: transparent;
+  font-weight: inherit;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 15px;
+  box-shadow: none;
+}
+.form-check {
+  margin-bottom: 0;
+  position: inherit;
+}
+.form-check-input {
+  position: inherit;
+  margin-top: 0;
+  float: none;
+  margin-left: 0;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #8d8d8d;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+.form-check-input:checked {
+  background: #df4e3c;
+  border-color: #df4e3c;
+}
+.form-check-input:focus {
+  box-shadow: none;
+}
+.dropdown-toggle::after {
+  border: none;
+  background: url(dropdown.6bc8d7fe.svg);
+}
+.dropdown-menu {
+  width: 100%;
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 27px rgba(0, 0, 0, 0.04);
+  border-radius: 15px;
+  min-width: 0;
+}
+.dropdown-item {
+  font-family: Noto Sans, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 11px;
+  color: #000;
+  padding-bottom: 20px;
+}
+.dropdown-item:hover {
+  color: #df4e3c;
+  background-color: transparent;
 }
 .card {
   border: none;
-  box-shadow: 0px 0px 18px rgba(68, 68, 68, 0.09);
+  box-shadow: 0 0 18px rgba(68, 68, 68, 0.09);
   transition: all 0.3s;
 }
 .card__title {
-  font-family: Noto Sans;
+  font-family: Noto Sans, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 17px;
@@ -261,23 +353,23 @@ a {
 }
 .card__year {
   margin-right: 8px;
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 17px;
   line-height: 25px;
-  color: #8D8D8D;
+  color: #8d8d8d;
 }
 .card__details {
-  font-family: Noto Sans;
+  font-family: Noto Sans, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: 19px;
-  color: #8D8D8D;
+  color: #8d8d8d;
 }
 .card__price {
-  font-family: Noto Sans;
+  font-family: Noto Sans, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -285,7 +377,7 @@ a {
   color: #000;
 }
 .card:hover {
-  border: 1px solid #BDBDBD;
+  border: 1px solid #bdbdbd;
   border-top: none;
 }
 .form-subscription {
@@ -331,7 +423,7 @@ a {
   padding: 0;
 }
 .question {
-  border-bottom: 1px solid #C4C4C4;
+  border-bottom: 1px solid #c4c4c4;
 }
 .question__title {
   padding-left: 24px;
@@ -376,11 +468,10 @@ a {
 }
 .accordion-button:not(.collapsed) {
   font-weight: bold;
-  color: #DF4E3C;
+  color: #df4e3c;
   border-bottom: none;
   background: transparent;
   padding-left: 40px;
-  background: none;
 }
 .accordion-button:not(.collapsed)::after {
   background-image: url(minus.4d6ba697.svg);
