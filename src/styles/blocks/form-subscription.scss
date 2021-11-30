@@ -37,12 +37,13 @@
     width: 100%;
 
     &-container {
-      width: 60%;
+      width: 70%;
       margin-right: 20px;
     }
 
     &__button-container {
-      width: auto;
+      padding: 0;
+      //width: 30%;
     }
   }
 }
